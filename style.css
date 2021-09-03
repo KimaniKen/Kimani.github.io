@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior:smooth;
+}
+
+
+section{
+    width: 100%; 
+    height: 100vh;
+    background-color:var(--primary-color);
+    border-bottom: 1px solid #484849;
+}
+.sec-title{
+    padding-top: 5vh;
+text-align: center; 
+color: var(--tertially-color);
+
+}
+
+
+p{
+    color:var(--secondary-color);
+
+}
+/* primary color - background */
+/* Secondary color -  black text */
+/* Tertially color - green text */
+
+:root{
+    --primary-color:#cfcfcf;
+    --secondary-color: black;
+    --tertially-color: #008037;
+} 
+
+.dark-mode{
+    --primary-color:black;
+    --secondary-color: white;
+    --tertially-color: #008037;
+} 
+/* Start Header and Navbar */
+
+#Homes{
+    background-color:var(--primary-color);
+}
+header {
+    display: flex;
+    align-items: center;
+    background-color:var(--primary-color);
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #484849;
+    top: 0;
+    position:fixed;
+
+}
+
+.logo{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin-left: 15px;
+    cursor: pointer;
+
+
+}
+
+
+.logo a{
+    text-decoration: none;
+    color:var(--secondary-color);
+}
+span{
+    color: var(--tertially-color);
+}
+span:hover{
+    color: var(--secondary-color); 
+
+}
+.logo a:hover{
+    color: var(--tertially-color);
+}
+
+
+nav{
+    margin-left: auto;
+}
+
+nav ul{
+    flex:1;
+    text-align: right;
+}
+
+.nav-links ul {
+    display: flex;
+}
+.nav-links ul li{
+    list-style: none;
+    margin-top: 15px;
+    
+}
+.nav-links ul li a {
+     padding: 0 30px;
+     text-decoration: none;
+     font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+
+.nav-links ul li a:hover {
+    color:var(--tertially-color);
+
+}
+
+#icon{
+    width: 40;
+    cursor: pointer;
+    margin-left: 5px;
+    padding: auto;
+    height: 20px;
+    margin-top: 15px;
+}
+
+.burger{
+    padding: 0.5rem;
+  cursor: pointer;
+
+}
+/*end Header and Navbar */
+      
+/* My name and hero section */
+.top-head{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+
+
+.hero{
+text-align: center;
+    margin-top: 75px;
+padding-top: 20px;
+
+}
+
+#myPic{
+    height: 100%;
+    margin-bottom: 10%;
+    margin-top: 15%;
+    max-width: 100%;
+    transition: none;
+}
+
+
+
+ .myname{
+     color:var(--secondary-color);
+     cursor: pointer;
+     margin-top: 45%;
+     margin-right: 35px;
+     letter-spacing: 5px;
+     font-size: 60px;
+     text-transform: uppercase;
+
+ }
+ .myname:hover{
+     color:var(--tertially-color);
+
+ }
+ .hero p{
+     margin-top: 12px;
+     font-size: 22px;
+     color: var(--tertially-color);
+ }
+.myContact {
+box-sizing: border-box;
+height: 55px;
+width: 55%;
+font-size: 18px;
+margin-top: 35px;
+border-radius: 50px;
+background-color:  var(--tertially-color);
+color:#FFE327;
+}
+ .myContact:hover{
+    
+ background-color:black;
+ color: var(--tertially-color);
+ }
+
+/*Films section */
+#Films{
+
+}
+
+
+/* film posters */
+
+
+
+
+
+
+
+.story{
+text-align: center;
+margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+#foot{
+    height: 10vh;
+    width: 100%;
+    text-align: center;
+    background-color:var(--primary-color);
+
+    
+    
+    
+
+}
+.socials{
+    display: flex;
+    justify-content: center;
+}
+.socials ul {
+}
+.socials li {
+    list-style: none;
+    padding: 0 20px;
+    margin-top: 20px;
+
+}
+
+.socials li a{
+    text-decoration: none;
+    color:var(--secondary-color);
+}
+.socials li a:hover{
+    color: var(--tertially-color);
+
+}
+.myinfo{
+    margin-top: 20px;
+}
+
+.myinfo a {
+    color:var(--secondary-color);
+
+}
+
+.myinfo a:hover{
+    color: var(--tertially-color);
+
+}
+
+
+/* Mobile responsive */
+
+ @media screen and (max-width:768px){
+    header{
+        display: flex;
+        width: 100%;
+    }
+   .logo{
+       font-size: 12px;
+       top: 50%;
+       left: 50%;
+   }
+   nav{
+       height: 20px;
+   }
+   .nav-links ul {
+flex-direction: column;
+
+}
+.nav-links ul li{
+    margin-top: 10px;
+
+}
+#icon{
+    width: 20px; 
+    height: auto;
+    margin-left: auto;
+}
+
+    .top-head{
+       flex-direction: column-reverse;
+    }
+#myPic{
+    height: 50%;
+    max-width: 100%;
+    margin-bottom: 0;
+    margin-top: 50px;
+justify-content: center;}
+.myname{
+    margin-top: 0;
+    margin-bottom: 0px;
+    font-size: 30px;
+    
+
+}
+
+.myContact{
+    margin-top: 15px;
+    height: 30px;
+    width: 30%;
+
+}
+.hero{
+    padding-top: 0px;
+    padding-top: 0;
+}
+
+.hero p{
+    font-size: 18px;
+}
+}
+    
+ 
