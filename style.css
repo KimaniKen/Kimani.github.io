@@ -150,7 +150,7 @@ padding-top: 20px;
 }
 
 #myPic{
-    height: 100%;
+    max-height: 100%;
     margin-bottom: 10%;
     margin-top: 15%;
     max-width: 100%;
